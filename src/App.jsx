@@ -8,6 +8,7 @@ import Users from './pages/Users';
 import UserDetail from './pages/UserDetail';
 import NotFound from './pages/NotFound';
 import './style/App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );
