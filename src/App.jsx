@@ -1,5 +1,5 @@
 // import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { HashRouter, Routes, Route } from 'react-router';
 import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -12,9 +12,10 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-container">
         <Navbar />
+
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,9 +25,10 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
+
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
